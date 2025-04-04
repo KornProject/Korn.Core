@@ -1,10 +1,69 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <TargetFrameworks>net8.0-windows;net472</TargetFrameworks>
     <Platforms>x64</Platforms>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Korn.Interface\bin\**" />
+    <Compile Remove="Korn.Interface\obj\**" />
+    <Compile Remove="Korn.Logger.Core\obj\**" />
+    <Compile Remove="Korn.Logger\bin\**" />
+    <Compile Remove="Korn.Logger\obj\**" />
+    <Compile Remove="Korn.Pipes\bin\**" />
+    <Compile Remove="Korn.Pipes\obj\**" />
+    <Compile Remove="Korn.Service.Client\bin\**" />
+    <Compile Remove="Korn.Service.Client\obj\**" />
+    <Compile Remove="Korn.Service.Server\bin\**" />
+    <Compile Remove="Korn.Service.Server\obj\**" />
+    <Compile Remove="Korn.Service.Shared\bin\**" />
+    <Compile Remove="Korn.Service.Shared\obj\**" />
+    <Compile Remove="Korn.Shared.Internal\bin\**" />
+    <Compile Remove="Korn.Shared.Internal\obj\**" />
+    <Compile Remove="Korn.Shared\bin\**" />
+    <Compile Remove="Korn.Shared\obj\**" />
+    <Compile Remove="Modules\**" />
+    <EmbeddedResource Remove="Korn.Interface\bin\**" />
+    <EmbeddedResource Remove="Korn.Interface\obj\**" />
+    <EmbeddedResource Remove="Korn.Logger.Core\obj\**" />
+    <EmbeddedResource Remove="Korn.Logger\bin\**" />
+    <EmbeddedResource Remove="Korn.Logger\obj\**" />
+    <EmbeddedResource Remove="Korn.Pipes\bin\**" />
+    <EmbeddedResource Remove="Korn.Pipes\obj\**" />
+    <EmbeddedResource Remove="Korn.Service.Client\bin\**" />
+    <EmbeddedResource Remove="Korn.Service.Client\obj\**" />
+    <EmbeddedResource Remove="Korn.Service.Server\bin\**" />
+    <EmbeddedResource Remove="Korn.Service.Server\obj\**" />
+    <EmbeddedResource Remove="Korn.Service.Shared\bin\**" />
+    <EmbeddedResource Remove="Korn.Service.Shared\obj\**" />
+    <EmbeddedResource Remove="Korn.Shared.Internal\bin\**" />
+    <EmbeddedResource Remove="Korn.Shared.Internal\obj\**" />
+    <EmbeddedResource Remove="Korn.Shared\bin\**" />
+    <EmbeddedResource Remove="Korn.Shared\obj\**" />
+    <EmbeddedResource Remove="Modules\**" />
+    <None Remove="Korn.Interface\bin\**" />
+    <None Remove="Korn.Interface\obj\**" />
+    <None Remove="Korn.Logger.Core\obj\**" />
+    <None Remove="Korn.Logger\bin\**" />
+    <None Remove="Korn.Logger\obj\**" />
+    <None Remove="Korn.Pipes\bin\**" />
+    <None Remove="Korn.Pipes\obj\**" />
+    <None Remove="Korn.Service.Client\bin\**" />
+    <None Remove="Korn.Service.Client\obj\**" />
+    <None Remove="Korn.Service.Server\bin\**" />
+    <None Remove="Korn.Service.Server\obj\**" />
+    <None Remove="Korn.Service.Shared\bin\**" />
+    <None Remove="Korn.Service.Shared\obj\**" />
+    <None Remove="Korn.Shared.Internal\bin\**" />
+    <None Remove="Korn.Shared.Internal\obj\**" />
+    <None Remove="Korn.Shared\bin\**" />
+    <None Remove="Korn.Shared\obj\**" />
+    <None Remove="Modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
 
 </Project>
