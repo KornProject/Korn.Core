@@ -3,11 +3,13 @@
   <PropertyGroup>
     <TargetFrameworks>net8.0-windows;net472</TargetFrameworks>
     <Platforms>x64</Platforms>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="Korn.Interface\bin\**" />
     <Compile Remove="Korn.Interface\obj\**" />
+    <Compile Remove="Korn.Logger.Core\bin\**" />
     <Compile Remove="Korn.Logger.Core\obj\**" />
     <Compile Remove="Korn.Logger\bin\**" />
     <Compile Remove="Korn.Logger\obj\**" />
@@ -23,9 +25,14 @@
     <Compile Remove="Korn.Shared.Internal\obj\**" />
     <Compile Remove="Korn.Shared\bin\**" />
     <Compile Remove="Korn.Shared\obj\**" />
+    <Compile Remove="Korn.Modules.Unsafe\bin\**" />
+    <Compile Remove="Korn.Modules.Unsafe\obj\**" />
+    <Compile Remove="Korn.Modules.WinApi\bin\**" />
+    <Compile Remove="Korn.Modules.WinApi\obj\**" />
     <Compile Remove="Modules\**" />
     <EmbeddedResource Remove="Korn.Interface\bin\**" />
     <EmbeddedResource Remove="Korn.Interface\obj\**" />
+    <EmbeddedResource Remove="Korn.Logger.Core\bin\**" />
     <EmbeddedResource Remove="Korn.Logger.Core\obj\**" />
     <EmbeddedResource Remove="Korn.Logger\bin\**" />
     <EmbeddedResource Remove="Korn.Logger\obj\**" />
@@ -41,9 +48,14 @@
     <EmbeddedResource Remove="Korn.Shared.Internal\obj\**" />
     <EmbeddedResource Remove="Korn.Shared\bin\**" />
     <EmbeddedResource Remove="Korn.Shared\obj\**" />
+    <EmbeddedResource Remove="Korn.Modules.Unsafe\bin\**" />
+    <EmbeddedResource Remove="Korn.Modules.Unsafe\obj\**" />
+    <EmbeddedResource Remove="Korn.Modules.WinApi\bin\**" />
+    <EmbeddedResource Remove="Korn.Modules.WinApi\obj\**" />
     <EmbeddedResource Remove="Modules\**" />
     <None Remove="Korn.Interface\bin\**" />
     <None Remove="Korn.Interface\obj\**" />
+    <None Remove="Korn.Logger.Core\bin\**" />
     <None Remove="Korn.Logger.Core\obj\**" />
     <None Remove="Korn.Logger\bin\**" />
     <None Remove="Korn.Logger\obj\**" />
@@ -59,10 +71,16 @@
     <None Remove="Korn.Shared.Internal\obj\**" />
     <None Remove="Korn.Shared\bin\**" />
     <None Remove="Korn.Shared\obj\**" />
+    <None Remove="Korn.Modules.Unsafe\bin\**" />
+    <None Remove="Korn.Modules.Unsafe\obj\**" />
+    <None Remove="Korn.Modules.WinApi\bin\**" />
+    <None Remove="Korn.Modules.WinApi\obj\**" />
     <None Remove="Modules\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Magick.NET-Q16-x64" Version="14.6.0" />
+    <PackageReference Include="Magick.NET.Core" Version="14.6.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
